@@ -6,7 +6,7 @@
     <title>Daixuan Cheng - Personal Homepage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,17 +15,19 @@
         }
 
         body {
-            font-family: 'Cambria Math', Cambria, Georgia, serif;
-            background: #fff;
-            color: #333;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #F5F1EB;
+            color: #191918;
             min-height: 100vh;
-            line-height: 1.7;
+            line-height: 1.8;
+            font-size: 20px;
+            letter-spacing: -0.01em;
         }
 
         a {
             color: #6B4C8A;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.2s;
         }
 
         a:hover {
@@ -38,10 +40,10 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(155, 123, 184, 0.1);
-            padding: 12px 0;
+            background: rgba(245, 241, 235, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            padding: 16px 0;
         }
 
         nav ul {
@@ -53,61 +55,62 @@
         }
 
         nav a {
-            font-size: 0.95rem;
+            font-size: 1.05rem;
             font-weight: 500;
             color: #555;
             text-decoration: none;
             padding: 6px 0;
-            border-bottom: 2px solid transparent;
-            transition: all 0.3s;
+            border-bottom: none;
+            transition: all 0.2s;
         }
 
         nav a:hover, nav a.active {
             color: #6B4C8A;
-            border-bottom-color: #9B7BB8;
             text-decoration: none;
         }
 
         /* Hero / About Section */
         .hero {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 36px 24px 24px;
+            padding: 56px 24px 40px;
             display: flex;
             gap: 32px;
             align-items: flex-start;
         }
 
         .hero-info h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.9rem;
-            font-weight: 700;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 2.6rem;
+            font-weight: 600;
             color: #6B4C8A;
-            margin-bottom: 6px;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
         }
 
         .hero-info .tagline {
-            font-size: 1.05rem;
+            font-size: 1rem;
             color: #9B7BB8;
             margin-bottom: 10px;
             font-weight: 500;
         }
 
         .hero-info p {
-            color: #555;
-            font-size: 1.02rem;
+            color: #666;
+            font-size: 1.15rem;
             margin-bottom: 10px;
-            text-align: justify;
+            text-align: left;
         }
 
         .hero-info .highlight {
-            background: linear-gradient(90deg, rgba(155, 123, 184, 0.04), rgba(201, 184, 218, 0.04));
+            background: rgba(255, 255, 255, 0.45);
             border-left: 3px solid #9B7BB8;
-            padding: 10px 14px;
-            border-radius: 0 8px 8px 0;
-            margin: 10px 0;
-            font-size: 1.02rem;
-            color: #444;
+            padding: 16px 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 16px 0;
+            font-size: 1.25rem;
+            color: #333;
+            line-height: 1.75;
         }
 
         .contact-links {
@@ -122,70 +125,74 @@
             align-items: center;
             gap: 6px;
             padding: 6px 14px;
-            border-radius: 25px;
-            font-size: 0.92rem;
+            border-radius: 20px;
+            font-size: 1.1rem;
             font-weight: 500;
-            transition: all 0.3s;
+            transition: all 0.2s;
             text-decoration: none;
         }
 
         .contact-link-primary {
-            background: linear-gradient(90deg, #9B7BB8, #C9B8DA);
+            background: linear-gradient(90deg, #6B4C8A, #9B7BB8);
             color: white;
         }
 
         .contact-link-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(155, 123, 184, 0.3);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(107, 76, 138, 0.25);
             color: white;
             text-decoration: none;
         }
 
         .contact-link-secondary {
-            background: rgba(155, 123, 184, 0.1);
-            color: #6B4C8A;
-            border: 1px solid rgba(155, 123, 184, 0.2);
+            background: rgba(255, 255, 255, 0.5);
+            color: #2D2D2D;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
         }
 
         .contact-link-secondary:hover {
-            background: rgba(155, 123, 184, 0.2);
-            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.8);
+            transform: translateY(-1px);
             text-decoration: none;
+            color: #6B4C8A;
         }
 
         /* Section Styles */
         .section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 24px 24px;
+            padding: 48px 24px;
         }
 
         .section-divider {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             border: none;
-            border-top: 1px solid rgba(155, 123, 184, 0.15);
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
         }
 
         .section h2 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.7rem;
             color: #6B4C8A;
-            margin-bottom: 16px;
+            margin-bottom: 24px;
             display: flex;
             align-items: center;
             gap: 10px;
+            letter-spacing: -0.02em;
+            font-weight: 400;
         }
 
         .section h2 .icon {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
         }
 
         /* Research Interests */
         .research-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
+            gap: 12px;
         }
 
         @media (max-width: 600px) {
@@ -201,23 +208,24 @@
         }
 
         .research-card {
-            background: white;
-            border: 1px solid rgba(155, 123, 184, 0.15);
-            border-radius: 8px;
-            padding: 10px 12px;
-            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 14px;
+            padding: 16px 18px;
+            transition: all 0.2s;
         }
 
         .research-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(155, 123, 184, 0.12);
-            border-color: rgba(155, 123, 184, 0.35);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            background: rgba(255, 255, 255, 0.7);
+            border-color: rgba(0, 0, 0, 0.08);
         }
 
         .research-card h3 {
-            font-size: 0.88rem;
-            color: #6B4C8A;
-            margin-bottom: 5px;
+            font-size: 1.15rem;
+            color: #191918;
+            margin-bottom: 8px;
             font-weight: 600;
         }
 
@@ -228,17 +236,18 @@
         }
 
         .research-card .papers a {
-            font-size: 0.87rem;
-            padding: 3px 9px;
-            background: rgba(155, 123, 184, 0.12);
-            border-radius: 20px;
+            font-size: 1.1rem;
+            padding: 4px 10px;
+            background: rgba(107, 76, 138, 0.06);
+            border-radius: 6px;
             color: #6B4C8A;
             text-decoration: none;
             transition: all 0.2s;
         }
 
         .research-card .papers a:hover {
-            background: rgba(155, 123, 184, 0.2);
+            background: rgba(107, 76, 138, 0.12);
+            color: #6B4C8A;
             text-decoration: none;
         }
 
@@ -250,11 +259,11 @@
         }
 
         .pub-item {
-            background: white;
+            background: transparent;
             border: none;
-            border-bottom: 1px solid rgba(155, 123, 184, 0.12);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
             border-radius: 0;
-            padding: 12px 16px;
+            padding: 16px 16px;
             transition: all 0.3s;
             position: relative;
         }
@@ -268,27 +277,30 @@
         }
 
         .pub-title {
-            font-weight: 700;
-            color: #333;
-            font-size: 1rem;
-            margin-bottom: 4px;
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 600;
+            color: #191918;
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+            letter-spacing: -0.01em;
         }
 
         .pub-authors {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 4px;
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 5px;
         }
 
         .pub-authors strong {
             color: #6B4C8A;
+            font-weight: 600;
         }
 
         .pub-venue {
-            font-size: 0.88rem;
-            color: #888;
-            margin-bottom: 5px;
-            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #999;
+            margin-bottom: 8px;
+            line-height: 1.7;
         }
 
         .pub-venue strong {
@@ -296,19 +308,19 @@
         }
 
         .pub-venue .pub-highlight {
-            color: #C0392B;
+            color: #BF5A3A;
             font-weight: 600;
         }
 
         .pub-venue a.pub-highlight {
-            color: #C0392B;
+            color: #BF5A3A;
             font-weight: 600;
             text-decoration: none;
         }
 
         .pub-venue a.pub-highlight:hover {
             text-decoration: underline;
-            color: #E74C3C;
+            color: #D4714F;
         }
 
         .pub-links {
@@ -318,10 +330,10 @@
         }
 
         .pub-links a {
-            font-size: 0.85rem;
-            padding: 3px 12px;
-            border-radius: 20px;
-            background: rgba(155, 123, 184, 0.1);
+            font-size: 1.1rem;
+            padding: 4px 12px;
+            border-radius: 6px;
+            background: rgba(107, 76, 138, 0.06);
             color: #6B4C8A;
             text-decoration: none;
             font-weight: 500;
@@ -329,8 +341,8 @@
         }
 
         .pub-links a:hover {
-            background: linear-gradient(90deg, #9B7BB8, #C9B8DA);
-            color: white;
+            background: rgba(107, 76, 138, 0.12);
+            color: #6B4C8A;
             text-decoration: none;
         }
 
@@ -340,24 +352,24 @@
         }
 
         .full-list-link a {
-            font-size: 0.95rem;
-            padding: 10px 28px;
-            border-radius: 25px;
-            background: rgba(155, 123, 184, 0.1);
+            font-size: 1.1rem;
+            padding: 8px 24px;
+            border-radius: 20px;
+            background: rgba(107, 76, 138, 0.08);
             color: #6B4C8A;
             font-weight: 600;
             text-decoration: none;
-            border: 1px solid rgba(155, 123, 184, 0.25);
-            transition: all 0.3s;
+            border: 1px solid rgba(107, 76, 138, 0.2);
+            transition: all 0.2s;
             display: inline-block;
         }
 
         .full-list-link a:hover {
-            background: linear-gradient(90deg, #9B7BB8, #C9B8DA);
+            background: linear-gradient(90deg, #6B4C8A, #9B7BB8);
             color: white;
             border-color: transparent;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(155, 123, 184, 0.3);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(107, 76, 138, 0.25);
             text-decoration: none;
         }
 
@@ -402,27 +414,26 @@
         }
 
         .edu-degree {
-            font-weight: 700;
-            color: #333;
-            font-size: 0.97rem;
+            font-weight: 600;
+            color: #191918;
+            font-size: 1.2rem;
             display: inline;
         }
 
         .edu-school {
             color: #6B4C8A;
-            font-size: 0.97rem;
+            font-size: 1.2rem;
             display: inline;
         }
 
         .edu-year {
-            font-size: 0.9rem;
+            font-size: 1.1rem;
             color: #999;
             display: inline;
         }
 
         .edu-advisor {
-            font-size: 0.95rem;
-            color: #666;
+            font-size: 1.15rem;
         }
 
         /* Awards */
@@ -436,10 +447,10 @@
             display: flex;
             align-items: flex-start;
             gap: 12px;
-            padding: 8px 16px;
-            background: white;
+            padding: 10px 16px;
+            background: transparent;
             border: none;
-            border-bottom: 1px solid rgba(155, 123, 184, 0.08);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
             border-radius: 0;
             transition: all 0.3s;
         }
@@ -459,8 +470,8 @@
         }
 
         .award-text {
-            font-size: 0.93rem;
-            color: #444;
+            font-size: 1.15rem;
+            color: #333;
         }
 
         .award-text a {
@@ -470,11 +481,11 @@
         /* Footer */
         footer {
             text-align: center;
-            padding: 24px 20px;
+            padding: 40px 20px;
             color: #999;
-            border-top: 1px solid rgba(155, 123, 184, 0.1);
-            background: linear-gradient(180deg, transparent, rgba(155, 123, 184, 0.03));
-            font-size: 0.9rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+            font-size: 1.1rem;
+            letter-spacing: 0.02em;
         }
 
         /* Responsive */
@@ -531,17 +542,17 @@
 
         .pub-toggle {
             display: block;
-            margin: 10px auto 0;
+            margin: 14px auto 0;
             padding: 6px 20px;
-            font-size: 0.9rem;
+            font-size: 1.1rem;
             color: #6B4C8A;
             background: none;
             border: none;
             cursor: pointer;
             font-family: inherit;
-            font-style: italic;
+            font-style: normal;
             text-decoration: underline;
-            transition: color 0.3s;
+            transition: color 0.2s;
         }
 
         .pub-toggle:hover {
@@ -561,7 +572,7 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#research">Research</a></li>
-            <li><a href="#education">Education & Experience</a></li>
+            <li><a href="#education">Education &amp; Experience</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#awards">Awards</a></li>
         </ul>
@@ -570,16 +581,16 @@
     <!-- Hero / About -->
     <section class="hero" id="about">
         <div class="hero-info">
-            <h1>Daixuan Cheng <span style="font-size: 0.55em; color: #999; font-weight: 500; font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;">成岱璇</span></h1>
+            <h1>Daixuan Cheng <span style="font-size: 0.55em; color: #777; font-weight: 500; font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;">成岱璇</span></h1>
 
-            <p style="color: #555; font-size: 1rem; margin-bottom: 4px;">
-                Ph.D. Student @ Gaoling School of AI, Renmin University | Intern @ Microsoft Research | Ex-@ CoAI of Tsinghua
+            <p style="color: #555; font-size: 1.2rem; margin-bottom: 4px;">
+                Ph.D. Student @ Gaoling School of AI, Renmin University | Intern @ GenAI Group, Microsoft Research
             </p>
 
 
             <div class="highlight">
-                I study <strong>LLMs</strong>, <strong>from Pre-Training to Agent</strong>. I value <strong style="color: #6B4C8A;">Simplicity</strong> and <strong style="color: #6B4C8A;">Generalization</strong>. Fan of 刘亦菲.
-                <div style="margin-top: 8px;">Currently focusing on <strong>Agent</strong>, especially the <strong>Generalization of Coding Agents</strong>. Latest work: <a href="https://huggingface.co/papers/2601.16206">LLM-in-Sandbox</a>.</div>
+                I study LLMs, from pre-training to agent. I pursue <strong style="color: #6B4C8A;">simple</strong> and <strong style="color: #6B4C8A;">generalizable</strong> research.
+                <div style="margin-top: 8px;">Currently focusing on agent, especially the generalization of coding agent: <a href="https://huggingface.co/papers/2601.16206">LLM-in-Sandbox</a>.</div>
             </div>
 
             <div class="contact-links">
@@ -596,8 +607,8 @@
     <!-- Research Interests -->
     <section class="section" id="research">
         <h2>Research Interests</h2>
-        <p style="color: #555; margin-bottom: 12px; font-size: 1rem;">
-            I am dedicated to enhancing Large Language Models across their entire lifecycle, <strong>from Pre-Training to Agent</strong>:
+        <p style="color: #555; margin-bottom: 12px; font-size: 1.2rem;">
+            I am dedicated to enhancing Large Language Models across their entire lifecycle, from pre-training to agent:
         </p>
         <div class="research-grid">
             <div class="research-card">
@@ -650,7 +661,7 @@
     <section class="section" id="education">
         <h2>Education &amp; Experience</h2>
 
-        <h3 style="font-size: 1.05rem; color: #6B4C8A; margin-bottom: 12px; font-weight: 600;">Education</h3>
+        <h3 style="font-size: 1.2rem; color: #6B4C8A; margin-bottom: 12px; font-weight: 600;">Education</h3>
         <div class="edu-timeline" style="margin-bottom: 18px;">
             <div class="edu-item">
                 <div><span class="edu-degree">Ph.D. in Artificial Intelligence,</span> <span class="edu-school">Gaoling School of AI, Renmin University of China</span> <span class="edu-year">(2025 – Present)</span></div>
@@ -665,7 +676,7 @@
             </div>
         </div>
 
-        <h3 style="font-size: 1.05rem; color: #6B4C8A; margin-bottom: 12px; font-weight: 600;">Research Experience</h3>
+        <h3 style="font-size: 1.2rem; color: #6B4C8A; margin-bottom: 12px; font-weight: 600;">Research Experience</h3>
         <div class="edu-timeline">
             <div class="edu-item">
                 <div><span class="edu-degree">Research Student,</span> <span class="edu-school">GenAI Group, Microsoft Research</span> <span class="edu-year">(2021 – Present)</span></div>
@@ -688,7 +699,7 @@
     <section class="section" id="publications">
         <h2>Selected Papers</h2>
         <div style="text-align: left; margin-top: -8px; margin-bottom: 12px;">
-            <a href="https://scholar.google.com/citations?hl=en&user=flRAZJQAAAAJ&view_op=list_works" style="font-size: 0.92rem; font-style: italic; text-decoration: underline; color: #6B4C8A;">View Full List on Google Scholar →</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=flRAZJQAAAAJ&view_op=list_works" style="font-size: 1.1rem; text-decoration: underline; color: #6B4C8A;">View Full List on Google Scholar →</a>
         </div>
 
         <div class="pub-list">
@@ -730,7 +741,7 @@
                 <div class="pub-title">Adapting Large Language Models via Reading Comprehension</div>
                 <div class="pub-authors"><strong>Daixuan Cheng</strong>, Shaohan Huang, Furu Wei</div>
                 <div class="pub-venue">
-                    <strong>ICLR 2024</strong> &mdash; Domain Adaption (Continual Pre-Training) of LLMs<br>
+                    <strong>ICLR 2024</strong> &mdash; Domain Adaptation (Continual Pre-Training) of LLMs<br>
                     <span class="pub-highlight">Earliest Research on Domain LLMs</span> · <a href="https://huggingface.co/AdaptLLM" class="pub-highlight">500K+ Downloads</a> · <a href="https://huggingface.co/AdaptLLM" class="pub-highlight">#1 Trending of ALL Domain LLMs</a> · <a href="https://huggingface.co/papers/2309.09530" class="pub-highlight">🤗 #2 Paper of the Day</a>
                 </div>
                 <div class="pub-links">
@@ -767,15 +778,18 @@
                 </div>
                 <div class="pub-links">
                     <a href="https://arxiv.org/abs/2303.08518">PDF</a>
-                    <a href="https://github.com/microsoft/LMOps/tree/main/uprise">Code</a>                    <a href="https://x.com/_akhaliq/status/1636175033927184384?s=20">X/Twitter by AK</a>                </div>
+                    <a href="https://github.com/microsoft/LMOps/tree/main/uprise">Code</a>
+                    <a href="https://x.com/_akhaliq/status/1636175033927184384?s=20">X/Twitter by AK</a>
+                </div>
             </div>
 
             <!-- Paper 6 -->
-             <div class="pub-item">
+            <div class="pub-item">
                 <div class="pub-title">FlowRL: Matching Reward Distributions for LLM Reasoning</div>
                 <div class="pub-authors">Xuekai Zhu, <strong>Daixuan Cheng</strong>, Dinghuai Zhang, Hengli Li, Kaiyan Zhang, Che Jiang, Youbang Sun, Ermo Hua, Yuxin Zuo, Xingtai Lv, Qizheng Zhang, Lin Chen, Fanghao Shao, Bo Xue, Yunchong Song, Zhenjie Yang, Ganqu Cui, Ning Ding, Jianfeng Gao, Xiaodong Liu, Bowen Zhou, Hongyuan Mei, Zhouhan Lin</div>
                 <div class="pub-venue">
                     <strong>ICLR 2026</strong> &mdash; Exploration of RL in LLM Reasoning<br>
+                    <span class="pub-highlight">GFlowNet for LLM Reasoning</span> ·
                     <a href="https://huggingface.co/papers/2509.15207" class="pub-highlight">🤗 #1 Paper of the Day</a>
                 </div>
                 <div class="pub-links">
