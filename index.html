@@ -20,7 +20,7 @@
             color: #191918;
             min-height: 100vh;
             line-height: 1.8;
-            font-size: 17px;
+            font-size: 1rem;
             letter-spacing: -0.01em;
         }
 
@@ -71,7 +71,7 @@
 
         /* Hero / About Section */
         .hero {
-            max-width: 1000px;
+            max-width: 960px;
             margin: 0 auto;
             padding: 56px 24px 40px;
             display: flex;
@@ -160,13 +160,13 @@
 
         /* Section Styles */
         .section {
-            max-width: 1000px;
+            max-width: 960px;
             margin: 0 auto;
             padding: 48px 24px;
         }
 
         .section-divider {
-            max-width: 1000px;
+            max-width: 960px;
             margin: 0 auto;
             border: none;
             border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -174,7 +174,7 @@
 
         .section h2 {
             font-family: 'Source Serif 4', Georgia, serif;
-            font-size: 1.7rem;
+            font-size: 1.45rem;
             color: #6B4C8A;
             margin-bottom: 24px;
             display: flex;
@@ -223,7 +223,7 @@
         }
 
         .research-card h3 {
-            font-size: 1.15rem;
+            font-size: 1.3rem;
             color: #191918;
             margin-bottom: 8px;
             font-weight: 600;
@@ -236,7 +236,7 @@
         }
 
         .research-card .papers a {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             padding: 4px 10px;
             background: rgba(107, 76, 138, 0.06);
             border-radius: 6px;
@@ -472,6 +472,8 @@
         .award-text {
             font-size: 1.15rem;
             color: #333;
+            padding-left: 1.2em;
+            text-indent: -1.2em;
         }
 
         .award-text a {
@@ -562,6 +564,7 @@
         /* Smooth scroll */
         html {
             scroll-behavior: smooth;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -574,7 +577,7 @@
             <li><a href="#research">Research</a></li>
             <li><a href="#education">Education &amp; Experience</a></li>
             <li><a href="#publications">Publications</a></li>
-            <li><a href="#awards">Awards</a></li>
+            <li><a href="#awards">Honors</a></li>
         </ul>
     </nav>
 
@@ -589,8 +592,8 @@
 
 
             <div class="highlight">
-                I study LLMs, from pre-training to agent. I pursue <strong style="color: #6B4C8A;">simple</strong> and <strong style="color: #6B4C8A;">generalizable</strong> research.
-                <div style="margin-top: 8px;">Current focus: general coding agent, see <a href="https://huggingface.co/papers/2601.16206">LLM-in-Sandbox</a>.</div>
+                I work on LLMs across pre-training, post-training, and agents.
+                <div style="margin-top: 8px;">Current focus: <strong style="color: #6B4C8A;">agentic LLM training</strong> (see <a href="https://huggingface.co/papers/2601.16206">LLM-in-Sandbox</a> and <a href="https://huggingface.co/papers/2604.26904">ClawGym</a>).</div>
             </div>
 
             <div class="contact-links">
@@ -606,33 +609,41 @@
 
     <!-- Research Interests -->
     <section class="section" id="research">
-        <h2>Research Interests</h2>
-        <p style="color: #555; margin-bottom: 12px; font-size: 1.2rem;">
-            I am dedicated to enhancing large language models across their entire lifecycle, from pre-training to agent:
-        </p>
+        <h2>Current focus: agentic LLM training</h2>
         <div class="research-grid">
             <div class="research-card">
-                <h3>General &amp; Code Agent</h3>
+                <h3>Agent harness</h3>
                 <div class="papers">
-                    <a href="https://huggingface.co/papers/2601.16206">LLM-in-Sandbox</a>
+                    <a href="https://arxiv.org/abs/2601.16206">LLM-in-Sandbox</a>
                 </div>
             </div>
             <div class="research-card">
-                <h3>Reasoning &amp; RL</h3>
+                <h3>Agentic RL infra</h3>
+                <div class="papers">
+                    <a href="https://arxiv.org/abs/2601.16206">LLM-in-Sandbox-RL</a>
+                    <a href="https://arxiv.org/abs/2604.26904">ClawGym</a>
+                </div>
+            </div>
+            <div class="research-card">
+                <h3>RL algorithms</h3>
                 <div class="papers">
                     <a href="https://arxiv.org/abs/2506.14758">Reasoning with Exploration</a>
                     <a href="https://huggingface.co/papers/2509.15207">FlowRL</a>
                 </div>
             </div>
+        </div>
+
+        <h2 style="margin-top: 32px;">Other directions</h2>
+        <div class="research-grid">
             <div class="research-card">
-                <h3>Pre-Training &amp; Mid-Training</h3>
+                <h3>Pre-training &amp; Mid-training</h3>
                 <div class="papers">
-                    <a href="https://huggingface.co/papers/2406.14491">Instruction Pre-Training</a>
+                    <a href="https://huggingface.co/papers/2406.14491">Instruction Pre-Train</a>
                     <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Bi_VL-Match_Enhancing_Vision-Language_Pretraining_with_Token-Level_and_Instance-Level_Matching_ICCV_2023_paper.pdf">VL-Match</a>
                 </div>
             </div>
             <div class="research-card">
-                <h3>Post-Training &amp; Adaptation</h3>
+                <h3>Post-training &amp; Adaptation</h3>
                 <div class="papers">
                     <a href="https://huggingface.co/papers/2309.09530">AdaptLLM</a>
                     <a href="https://arxiv.org/abs/2411.19930">AdaMLLM</a>
@@ -640,16 +651,12 @@
                 </div>
             </div>
             <div class="research-card">
-                <h3>Synthetic Data</h3>
+                <h3>Synthetic data</h3>
                 <div class="papers">
-                    <a href="https://huggingface.co/papers/2406.14491">Instruction Pre-Training</a>
+                    <a href="https://huggingface.co/papers/2406.14491">Instruction Pre-Train</a>
+                    <a href="https://huggingface.co/papers/2309.09530">AdaptLLM</a>
+                    <a href="https://arxiv.org/abs/2411.19930">AdaMLLM</a>
                     <a href="https://arxiv.org/abs/2412.14689">ToEdit</a>
-                </div>
-            </div>
-            <div class="research-card">
-                <h3>Retrieval Augmented Generation</h3>
-                <div class="papers">
-                    <a href="https://arxiv.org/abs/2303.08518">UPRISE</a>
                 </div>
             </div>
         </div>
@@ -665,7 +672,7 @@
         <div class="edu-timeline" style="margin-bottom: 18px;">
             <div class="edu-item">
                 <div><span class="edu-degree">Ph.D. in Artificial Intelligence,</span> <span class="edu-school">Gaoling School of AI, Renmin University of China</span> <span class="edu-year">(2025 – Present)</span></div>
-                <div class="edu-advisor">Advisor: <a href="https://scholar.google.com/citations?user=JNhNacoAAAAJ&hl=en">Xin Zhao</a></div>
+                <div class="edu-advisor">Advisor: <a href="https://scholar.google.com/citations?user=JNhNacoAAAAJ&hl=en">Wayne Xin Zhao</a></div>
             </div>
             <div class="edu-item">
                 <div><span class="edu-degree">M.S. in Computer Science,</span> <span class="edu-school">Beijing University of Posts and Telecommunications</span> <span class="edu-year">(2020 – 2023)</span></div>
@@ -676,7 +683,7 @@
             </div>
         </div>
 
-        <h3 style="font-size: 1.2rem; color: #6B4C8A; margin-bottom: 12px; font-weight: 600;">Research Experience</h3>
+        <h3 style="font-size: 1.2rem; color: #6B4C8A; margin-bottom: 12px; font-weight: 600;">Experience</h3>
         <div class="edu-timeline">
             <div class="edu-item">
                 <div><span class="edu-degree">Research Student,</span> <span class="edu-school">GenAI Group, Microsoft Research</span> <span class="edu-year">(2021 – Present)</span></div>
@@ -724,6 +731,21 @@
 
             <!-- Paper 2 -->
             <div class="pub-item">
+                <div class="pub-title">ClawGym: A Scalable Framework for Building Effective Claw Agents</div>
+                <div class="pub-authors">Fei Bai*, Huatong Song*, Shuang Sun*, <strong>Daixuan Cheng</strong>, Yike Yang, Chuan Hao, Renyuan Li, Feng Chang, Yuan Wei, Ran Tao, Bryan Dai, Jian Yang, Wayne Xin Zhao, Ji-Rong Wen</div>
+                <div class="pub-venue">
+                    arXiv preprint, 2026 &mdash; Agentic data collection, training infra and evaluation benchmark<br>
+                    <span class="pub-highlight">My role: built the black-box agentic RL pipeline for OpenClaw</span>
+                </div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2604.26904">PDF</a>
+                    <a href="https://github.com/ClawGym">Code</a>
+                    <a href="https://mp.weixin.qq.com/s/F0XDDGXsir3p67rNFt6vtQ">WeChat Report</a>
+                </div>
+            </div>
+
+            <!-- Paper 3 -->
+            <div class="pub-item">
                 <div class="pub-title">Reasoning with Exploration: An Entropy Perspective</div>
                 <div class="pub-authors"><strong>Daixuan Cheng</strong>, Shaohan Huang, Xuekai Zhu, Bo Dai, Wayne Xin Zhao, Zhenliang Zhang, Furu Wei</div>
                 <div class="pub-venue">
@@ -737,7 +759,7 @@
                 </div>
             </div>
 
-            <!-- Paper 3 -->
+            <!-- Paper 4 -->
             <div class="pub-item">
                 <div class="pub-title">Adapting Large Language Models via Reading Comprehension</div>
                 <div class="pub-authors"><strong>Daixuan Cheng</strong>, Shaohan Huang, Furu Wei</div>
@@ -753,7 +775,7 @@
                 </div>
             </div>
 
-            <!-- Paper 4 -->
+            <!-- Paper 5 -->
             <div class="pub-item">
                 <div class="pub-title">Instruction Pre-Training: Language Models are Supervised Multitask Learners</div>
                 <div class="pub-authors"><strong>Daixuan Cheng</strong>, Yuxian Gu, Shaohan Huang, Junyu Bi, Minlie Huang, Furu Wei</div>
@@ -769,7 +791,7 @@
                 </div>
             </div>
 
-            <!-- Paper 5 -->
+            <!-- Paper 6 -->
             <div class="pub-item">
                 <div class="pub-title">UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation</div>
                 <div class="pub-authors"><strong>Daixuan Cheng</strong>, Shaohan Huang, Junyu Bi, Yuefeng Zhan, Jianfeng Liu, Yujing Wang, Hao Sun, Furu Wei, Denvy Deng, Qi Zhang</div>
@@ -784,7 +806,7 @@
                 </div>
             </div>
 
-            <!-- Paper 6 -->
+            <!-- Paper 7 -->
             <div class="pub-item">
                 <div class="pub-title">FlowRL: Matching Reward Distributions for LLM Reasoning</div>
                 <div class="pub-authors">Xuekai Zhu, <strong>Daixuan Cheng</strong>, Dinghuai Zhang, Hengli Li, Kaiyan Zhang, Che Jiang, Youbang Sun, Ermo Hua, Yuxin Zuo, Xingtai Lv, Qizheng Zhang, Lin Chen, Fanghao Shao, Bo Xue, Yunchong Song, Zhenjie Yang, Ganqu Cui, Ning Ding, Jianfeng Gao, Xiaodong Liu, Bowen Zhou, Hongyuan Mei, Zhouhan Lin</div>
@@ -803,7 +825,7 @@
         </div>
 
         <div class="pub-more" id="pubMore">
-            <!-- Paper 7 -->
+            <!-- Paper 8 -->
             <div class="pub-item">
                 <div class="pub-title">On Domain-Adaptive Post-Training for Multimodal Large Language Models</div>
                 <div class="pub-authors"><strong>Daixuan Cheng</strong>, Shaohan Huang, Ziyu Zhu, Xintong Zhang, Wayne Xin Zhao, Zhongzhi Luan, Bo Dai, Zhenliang Zhang</div>
@@ -818,7 +840,7 @@
                 </div>
             </div>
 
-            <!-- Paper 8 -->
+            <!-- Paper 9 -->
             <div class="pub-item">
                 <div class="pub-title">How to Synthesize Text Data without Model Collapse?</div>
                 <div class="pub-authors">Xuekai Zhu, <strong>Daixuan Cheng</strong>, Hengli Li, Kaiyan Zhang, Ermo Hua, Xingtai Lv, Ning Ding, Zhouhan Lin, Zilong Zheng, Bowen Zhou</div>
@@ -832,7 +854,7 @@
                 </div>
             </div>
 
-            <!-- Paper 9 -->
+            <!-- Paper 10 -->
             <div class="pub-item">
                 <div class="pub-title">VL-Match: Enhancing Vision-Language Pretraining with Token-Level and Instance-Level Matching</div>
                 <div class="pub-authors">Junyu Bi, <strong>Daixuan Cheng</strong>, Ping Yao, Bochen Pang, Yuefeng Zhan, Chuanguang Yang, Yujing Wang, Hao Sun, Weiwei Deng, Qi Zhang</div>
@@ -845,7 +867,7 @@
                 </div>
             </div>
 
-            <!-- Paper 10 -->
+            <!-- Paper 11 -->
             <div class="pub-item">
                 <div class="pub-title">Snapshot-guided Domain Adaptation for ELECTRA</div>
                 <div class="pub-authors"><strong>Daixuan Cheng</strong>, Shaohan Huang, Jianfeng Liu, Yuefeng Zhan, Hao Sun, Furu Wei, Denvy Deng, Qi Zhang</div>
@@ -866,27 +888,21 @@
 
     <hr class="section-divider">
 
-    <!-- Honors & Awards -->
+    <!-- Honors & Community Impact -->
     <section class="section" id="awards">
-        <h2>Honors &amp; Awards</h2>
+        <h2>Honors &amp; Community Impact</h2>
         <div class="award-list">
             <div class="award-item">
-                <span class="award-text">Most Influential Paper of AAAI 2026 (by Paper Digest)</span>
+                <span class="award-text"><strong>Academic impact:</strong><br>700+ citations on 1st-author papers (2 with 200+)<br>Most Influential Paper of AAAI 2026 (1st-author)</span>
             </div>
             <div class="award-item">
-                <span class="award-text">🤗 Hugging Face Top Contributors</span>
+                <span class="award-text"><strong>Open-source impact:</strong><br>🤗 HuggingFace Top Contributor<br>Released models / datasets with 800K+ downloads</span>
             </div>
             <div class="award-item">
-                <span class="award-text">Outstanding Reviewer of EMNLP (Top 0.5%)</span>
+                <span class="award-text"><strong>Service:</strong><br>Outstanding Reviewer of EMNLP 2025 (Top 0.5%)<br>Reviewer for ICLR, NeurIPS, ACL, etc.</span>
             </div>
             <div class="award-item">
-                <span class="award-text">1st Place in the PhD Entrance Exam (Preliminary) at the GSAI, Renmin University of China</span>
-            </div>
-            <div class="award-item">
-                <span class="award-text">National Scholarship for Master Students (Top 1%)</span>
-            </div>
-            <div class="award-item">
-                <span class="award-text">1st Prize in the National English Competition (Top 0.5%)</span>
+                <span class="award-text"><strong>Scholarship:</strong><br>1st Place in PhD Entrance Exam (Preliminary), GSAI, RUC<br>National Scholarship for Master Students (Top 1%)<br>1st Prize in National English Competition (Top 0.5%)</span>
             </div>
         </div>
     </section>
